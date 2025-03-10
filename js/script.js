@@ -38,3 +38,13 @@ function translateLatinCharacter(character) {
         }
     }
 }
+function encode(string) {
+    const arrayOfString = getLatinCharacterList(string);
+
+    arrayOfString.forEach((char) => {
+        console.log(translateLatinCharacter(char));
+        
+    })
+}
+
+encode("HELLO");
